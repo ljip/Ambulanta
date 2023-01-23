@@ -3,6 +3,11 @@ import json
 import sys
 import time
 
+"""
+    Bug: Naime, kad se unese MBO s manje od 9 znamenki, neovisno o tome što je unesen novi MBO, 
+    pod pacijenta se pohrani stari MBO, odnosno onaj s premalo znamenki. 
+"""
+
 pacijenti = {}
 
 def load_data():
